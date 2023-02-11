@@ -29,7 +29,7 @@ const BottomTabNav = () => {
         tabBarStyle: {
           paddingHorizontal: 5,
           paddingTop: 0,
-          backgroundColor: '#1E293B',
+          backgroundColor: '#10111A',
           position: 'absolute',
           borderTopWidth: 0.5,
           borderTopColor: COLORS.gray,

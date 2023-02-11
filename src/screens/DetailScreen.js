@@ -29,7 +29,7 @@ export default function DetailScreen({route}) {
   return (
     <View style={styles.body}>
       <Pressable style={styles.buttonBack} onPress={() => navigation.goBack()}>
-        <Icon name="chevron-back-outline" size={32} color={'#FF9513'} />
+        <Icon name="chevron-back-outline" size={32} color={'#FF9D00'} />
       </Pressable>
 
       {/* overlay on image */}
@@ -142,7 +142,7 @@ export default function DetailScreen({route}) {
               {position: 'absolute', top: '70%', left: '32%'},
             ]}
             onPress={toggleModal}>
-            <Text style={{fontWeight: '600', fontSize: 20, color: '#000'}}>
+            <Text style={{fontWeight: '700', fontSize: 20, color: '#000'}}>
               Close
             </Text>
           </Pressable>
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   buttonInOptionBar: {
-    backgroundColor: '#04DB41',
+    backgroundColor: '#01FF45',
     borderRadius: 8,
     flexDirection: 'row',
     alignItems: 'center',

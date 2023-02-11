@@ -6,7 +6,7 @@ import Header from '../components/Header';
 
 const Home = () => {
   return (
-    <View style={{backgroundColor: '#1E293B'}}>
+    <View style={{backgroundColor: '#10111A'}}>
       <Header />
       <ScrollView>
         <Banner />

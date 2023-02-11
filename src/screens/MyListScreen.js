@@ -119,7 +119,7 @@ export default function MyListScreen() {
   return (
     <View
       style={{
-        backgroundColor: '#2D3958',
+        backgroundColor: '#1D2B33',
         paddingHorizontal: 16,
         borderTopLeftRadius: 30,
       }}>
@@ -138,7 +138,7 @@ export default function MyListScreen() {
               navigation.navigate('Detail', {film: item});
             }}
             style={({pressed}) => [
-              {backgroundColor: pressed ? '#25387D' : null},
+              {backgroundColor: pressed ? '#1D2B33' : null},
               {flexDirection: 'row', marginBottom: 24, borderRadius: 10},
             ]}>
             <Image
@@ -155,7 +155,7 @@ export default function MyListScreen() {
                 numberOfLines={1}
                 style={[
                   styles.textContent,
-                  {color: '#fff', fontWeight: '600'},
+                  {color: '#fff', fontWeight: '700'},
                 ]}>
                 {item.title}
               </Text>
@@ -167,7 +167,7 @@ export default function MyListScreen() {
                   style={[styles.textContent, {color: '#999', marginRight: 8}]}>
                   Current eps:
                 </Text>
-                <Text style={[styles.textContent, {color: '#F9D410'}]}>
+                <Text style={[styles.textContent, {color: '#F9E492'}]}>
                   {item.currentEps}
                 </Text>
               </View>
@@ -182,7 +182,7 @@ export default function MyListScreen() {
 const styles = StyleSheet.create({
   textInButton: {
     fontSize: 20,
-    fontWeight: '600',
+    fontWeight: '700',
     color: '#fff',
     marginRight: 8,
   },

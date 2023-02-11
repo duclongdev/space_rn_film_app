@@ -55,13 +55,13 @@ const Bottom = () => {
         padding: 20,
         borderTopWidth: 0.5,
         borderColor: '#f4f4f4',
-        backgroundColor: '#1E293B',
+        backgroundColor: '#10111A',
       }}>
       <Pressable onPress={() => setLike(13)}>
         <AntIcon
           name="like2"
           size={22}
-          style={{color: like === 12 ? 'white' : '#04DB41'}}
+          style={{color: like === 12 ? 'white' : '#01FF45'}}
         />
       </Pressable>
       <Text
@@ -110,7 +110,7 @@ const Bottom = () => {
 
 const PostDetail = () => {
   return (
-    <View style={{backgroundColor: '#1E293B'}}>
+    <View style={{backgroundColor: '#10111A'}}>
       <Header />
       <Body />
       <Bottom />

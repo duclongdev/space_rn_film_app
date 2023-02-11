@@ -1,5 +1,5 @@
 import {useBottomTabBarHeight} from '@react-navigation/bottom-tabs';
-import React, {useCallback, useEffect, useRef} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {
   Animated,
   Image,
@@ -8,19 +8,27 @@ import {
   Text,
   View,
   Easing,
+  Pressable,
+  TurboModuleRegistry,
 } from 'react-native';
 import Video from 'react-native-video';
 import {WINDOW_HEIGHT, WINDOW_WIDTH} from '../utils/animation';
 import {getMusicNoteAnim} from '../utils/animation';
-import video1 from '../assets/video/v3.mp4';
+import AntIcon from 'react-native-vector-icons/AntDesign';
 
 export default function VideoItem({data, isActive}) {
+  const [tim, setTim] = useState(false);
   const {uri, caption, channelName, musicName, likes, comments, avatarUri} =
     data;
 
   const discAnimatedValue = useRef(new Animated.Value(0)).current;
   const musicNoteAnimatedValue1 = useRef(new Animated.Value(0)).current;
   const musicNoteAnimatedValue2 = useRef(new Animated.Value(0)).current;
+
+  const changeTim = () => {
+    if (tim === true) setTim(false);
+    else setTim(true);
+  };
 
   const discAnimation = {
     transform: [
@@ -138,10 +146,13 @@ export default function VideoItem({data, isActive}) {
           </View>
         </View>
         <View style={styles.verticalBarItem}>
-          <Image
-            style={styles.verticalBarIcon}
-            source={require('../assets/images/heart.png')}
-          />
+          <Pressable onPress={changeTim}>
+            <AntIcon
+              name="heart"
+              size={30}
+              style={tim === false ? {color: 'white'} : {color: '#FF9D00'}}
+            />
+          </Pressable>
           <Text style={styles.verticalBarText}>{likes}</Text>
         </View>
         <View style={styles.verticalBarItem}>

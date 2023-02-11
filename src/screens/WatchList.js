@@ -47,7 +47,7 @@ export default function WatchList() {
             style={() => [
               styles.buttonNavi,
               {
-                backgroundColor: choice === 1 ? '#EBE910' : '#04DB41',
+                backgroundColor: choice === 1 ? '#FFFF00' : '#01FF45',
               },
             ]}>
             <Text style={styles.textInButton}>Mylist</Text>
@@ -61,7 +61,7 @@ export default function WatchList() {
             style={() => [
               styles.buttonNavi,
               {
-                backgroundColor: choice === 2 ? '#EBE910' : '#04DB41',
+                backgroundColor: choice === 2 ? '#FFFF00' : '#01FF45',
               },
             ]}>
             <Text style={styles.textInButton}>Rank</Text>
@@ -71,7 +71,7 @@ export default function WatchList() {
         {/* <Button onPress={() => } /> */}
       </View>
 
-      <View style={{flex: 4.5}}>
+      <View style={{flex: 5.3}}>
         {choice === 1 ? <MyListScreen /> : <RankScreen />}
       </View>
     </View>
@@ -81,7 +81,7 @@ export default function WatchList() {
 const styles = StyleSheet.create({
   body: {
     flex: 1,
-    backgroundColor: '#1E293B',
+    backgroundColor: '#10111A',
     height: '100%',
     paddingTop: 36,
   },

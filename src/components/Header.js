@@ -12,7 +12,7 @@ const Header = () => {
         alignItems: 'center',
         paddingVertical: 10,
         width: '100%',
-        backgroundColor: '#1E293B',
+        backgroundColor: '#10111A',
         borderBottomWidth: 0.5,
       }}>
       <Image

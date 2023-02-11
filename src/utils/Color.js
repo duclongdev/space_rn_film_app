@@ -6,6 +6,6 @@ const COLORS = {
   shipping: '#16C60C',
   cancelled: '#F84F4F',
   completed: '#FED66D',
-  main: '#16C60C',
+  main: '#01FF45',
 };
 export default COLORS;

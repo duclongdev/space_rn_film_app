@@ -21,18 +21,18 @@ const Header = () => {
               flexDirection: 'row',
               padding: 14,
               borderBottomWidth: 1.5,
-              borderBottomColor: '#04DB41',
+              borderBottomColor: '#01FF45',
             }}>
             <FeatherIcon
               name="trending-up"
               size={16}
-              style={{color: '#04DB41', marginRight: 6}}
+              style={{color: '#01FF45', marginRight: 6}}
             />
             <Text
               style={{
                 fontSize: 16,
                 fontWeight: '600',
-                color: '#04DB41',
+                color: '#01FF45',
               }}>
               Thịnh hành
             </Text>

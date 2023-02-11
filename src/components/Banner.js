@@ -21,7 +21,7 @@ const Banner = () => {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#1E293B',
+        backgroundColor: '#10111A',
       }}>
       <ScrollView>
         <Text style={{fontSize: 22, fontWeight: '600', color: 'white'}}>
@@ -48,7 +48,7 @@ const Banner = () => {
           activeDot={
             <View
               style={{
-                backgroundColor: '#04DB41',
+                backgroundColor: '#01FF45',
                 width: 14,
                 height: 3,
                 borderRadius: 4,
